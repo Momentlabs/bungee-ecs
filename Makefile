@@ -6,7 +6,7 @@ profile := momentlabs
 region := us-east-1
 
 # Get an auth-token to let docker use the AWS Repository (ecr).
-login := $(shell aws --output text ecr get-login  --region us-east-1)
+login := $(shell aws --profile $(profile) --region us-east-1 --output text ecr get-login)
 token := $(shell echo $(login)| awk '{print $$6}')
 
 help:
@@ -19,6 +19,6 @@ local:
 
 deploy-to-repo: local
 	@echo Bulding and pushing repository repository: $(repo)
-	docker login -u AWS -p $(token) https:$(aws_repo)
-	docker tag $(repo):latest $(aws_repo/$(repo):latest
+	docker login -u AWS -p $(token) https://$(aws_repo)
+	docker tag $(repo):latest $(aws_repo)/$(repo):latest
 	docker push $(aws_repo)/$(repo):latest
