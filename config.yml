@@ -14,7 +14,7 @@ listeners:
 
 servers:
   hub:
-    address: minecraft:25565
+    address: minecraft-hub:25565
     restricted: false
   # one:
   #   address: minecraft-01:25565
