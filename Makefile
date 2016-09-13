@@ -15,7 +15,7 @@ help:
 
 local:
 	@echo building local image: $(repo)
-	docker build -t $(repo) .
+	docker build --no-cache -t $(repo) .
 
 deploy-to-repo: local
 	@echo Bulding and pushing repository repository: $(repo)
