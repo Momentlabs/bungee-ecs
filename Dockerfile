@@ -17,6 +17,8 @@ ADD plugins/BungeeRcon-2.1.jar ${BUNGEECORD_HOME}/plugins/BugeeRecon-2.1.jar
 ADD plugins/BungeeRcon.yml ${BUNGEECORD_HOME}/plugins/BungeeRcon/config.yml
 ADD plugins/PluginMetrics_config.properties ${BUNGEECORD_HOME}/plugins/PluginMetrics/config.properties
 ADD plugins/Yamler-Bungee-2.4.0-SNAPSHOT.jar ${BUNGEECORD_HOME}/plugins/Yamler-Bungee-2.4.0-SNAPSHOT.jar
+ADD plugins/bungeeconfig-1.4.1.jar ${BUNGEECORD_HOME}/plugins/bungeeconfig-1.4.1.jar
+ADD plugins/bfixlib-1.4.1.jar ${BUNGEECORD_HOME}/plugins/bfixlib-1.4.1.jar
 
 # Server Configuration
 ADD config.yml ${BUNGEECORD_HOME}/config.yml

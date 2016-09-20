@@ -38,6 +38,7 @@ permissions:
   - bungeecord.command.ip
   - bungeecord.command.reload
   - servermanager.use
+  - bfix.admin
 groups:
   jdrivas:
     - admin
