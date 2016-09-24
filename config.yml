@@ -4,7 +4,7 @@ listeners:
   force_default_server: true
   forced_hosts:
     unconfiguredhost: unconfiguredserver
-  motd: '&5Docker Bungee'
+  motd: 'Docker Bungee'
   fallback_server: hub
   default_server: hub
   tab_list: GLOBAL
