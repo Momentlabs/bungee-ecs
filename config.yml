@@ -2,8 +2,7 @@ listeners:
 - max_players: 20
   host: 0.0.0.0:25577
   force_default_server: true
-  forced_hosts:
-    unconfiguredhost: unconfiguredserver
+  # forced_hosts:
   motd: 'Docker Bungee'
   fallback_server: hub
   default_server: hub

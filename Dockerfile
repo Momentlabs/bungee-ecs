@@ -12,7 +12,7 @@ RUN if [ ! -d ${BUNGEECORD_HOME} ]; then mkdir ${BUNGEECORD_HOME}/plugins;  fi
 ADD BungeeCord.jar ${BUNGEECORD_HOME}/BungeeCord.jar
 
 # Plugins. Right now this will be by hand, later perhaps some ENV/Directory thing.
-ADD plugins/BungeeServerManager.jar ${BUNGEECORD_HOME}/plugins/BugeeServerManager.jar
+# ADD plugins/BungeeServerManager.jar ${BUNGEECORD_HOME}/plugins/BugeeServerManager.jar
 ADD plugins/BungeeRcon-2.1.jar ${BUNGEECORD_HOME}/plugins/BugeeRecon-2.1.jar
 ADD plugins/BungeeRcon.yml ${BUNGEECORD_HOME}/plugins/BungeeRcon/config.yml
 ADD plugins/PluginMetrics_config.properties ${BUNGEECORD_HOME}/plugins/PluginMetrics/config.properties
@@ -25,7 +25,7 @@ ADD config.yml ${BUNGEECORD_HOME}/config.yml
 ADD bungeecord_init.sh ${BUNGEECORD_HOME}/bungeecord_init.sh
 
 # EULA
-RUN echo "eual=true" >${BUNGEECORD_HOME}/eula.txt
+RUN echo "eula=true" >${BUNGEECORD_HOME}/eula.txt
 
 # This is the default connection.
 EXPOSE 25577
